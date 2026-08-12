@@ -38,7 +38,7 @@ class AnalyticsModuleEnum(str, enum.Enum):
     no_show_prediction = "no_show_prediction"
     
     
-class UserRoleEnum(enum.Enum):
+class UserRoleEnum(str, enum.Enum):
     patient = "patient"
     admin = "admin"
     staff = "staff"
