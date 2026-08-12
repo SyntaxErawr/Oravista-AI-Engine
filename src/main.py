@@ -34,8 +34,8 @@ app.add_middleware(
         "http://localhost:3000",   # React local
         "http://localhost:5173",   # Vite local
         "https://oravista.vercel.app", # Deployment preview
-        "https://ora-vista-web.vercel.app",
-        "https://oravista.site"
+        "https://ora-vista-web.vercel.app", # added
+        "https://oravista.site" 
     ],
     allow_credentials=True,
     allow_methods=["*"],
