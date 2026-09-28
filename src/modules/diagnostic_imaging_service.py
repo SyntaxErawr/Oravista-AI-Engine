@@ -246,7 +246,8 @@ class DiagnosticImagingService:
         ai_findings_payload = {
             "predictions": [p.model_dump() for p in final_predictions],
             "human_verified": False,
-            "fallback_triggered": trigger_fallback
+            "fallback_triggered": trigger_fallback,
+            "image_url": public_url
         }
 
         print("[DATA FLOW] 4. Committing finalized data models to relational PostgreSQL tables...")
